@@ -1,0 +1,10 @@
+module(
+    name = "example",
+    version = "0.0.1",
+)
+
+bazel_dep(name = "libsi", version = "")
+local_path_override(
+    module_name = "libsi",
+    path = "./libsi",
+)
