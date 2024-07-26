@@ -1,5 +1,6 @@
 #include <gtest/gtest.h>
-#include <search_index.h>
+
+#include "search_index.h"
 
 TEST(TestCase, list_len_is_1) {
     SearchIndex si;

@@ -2,3 +2,5 @@ module(
     name = "libsi",
     version = "0.0.1",
 )
+
+bazel_dep(name = "googletest", version = "1.15.0")

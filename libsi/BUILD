@@ -6,3 +6,14 @@ cc_library(
     hdrs = ["search_index.h"],
     deps = [],
 )
+
+cc_test(
+    name = "libsi_test",
+    size = "small",
+    srcs = ["search_index_unittest.cc"],
+    deps = [
+        ":libsi",
+        "@googletest//:gtest",
+        "@googletest//:gtest_main",
+    ],
+)
